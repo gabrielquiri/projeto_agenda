@@ -1,0 +1,152 @@
+body {
+    background-color: rgb(77, 100, 248);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 1960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    margin-bottom: 4%;
+    background-color: rgb(70, 84, 220);
+    width: 100%;
+    height: 100%;
+}
+
+h1, h2{
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+    color: #fff;
+    background-color: rgb(70, 80, 210);
+}
+
+img {
+    width: 10%;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: block;
+}
+
+form input {
+    box-shadow: 0 0 20px #ccc;
+
+}
+
+input, button, ::placeholder {
+    display: block;
+    margin: 0 auto;
+    height: 50px;
+    width: 35%;
+    margin-bottom: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 20px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+button {
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 75px;
+    box-shadow: 0 0 20px #ccc;
+    background-color: rgba(30, 80, 210);
+
+}
+
+button:hover {
+    background-color: rgba(30, 80, 260);
+
+}
+
+table {
+    width: 100%;
+    background-color: rgb(80, 95, 250);
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 1%;
+    color: #fff;
+}
+
+table th {
+    font-size: 30px;
+    padding-right: 95px;
+    padding-left: 95px;
+}
+
+h3 {
+    padding: 10px;
+    padding-left: 15px;
+    background-color:  rgb(70, 80, 210);
+    margin: 0;
+    margin-top: 80px;
+    display: block;
+}
+
+main {
+    display: flex;
+    width: 50%;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.lista{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(82, 73, 211);
+    color: white;
+    height: 1px;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.nome{
+    flex: 20%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.sobrenome{
+    flex:35%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.telefone{
+    flex: 25%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+footer {
+    color: #fff;
+    background-color: rgb(60, 85, 230);
+}
+
+footer img{
+    display: inline;
+    width: 55px;
+    padding: 11px;
+}
+
+#insta {
+    width: 45px;
+}
+
+#youtube{
+    width: 75px;
+}
