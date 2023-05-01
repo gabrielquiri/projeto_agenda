@@ -1,47 +1,43 @@
-let contador = 0
-let input = document.getElementById('list')
-let btnAdd = document.getElementById('btn')
-let main = document.getElementById('lista')
+let contador = 0;
+let variavel_1 = document.getElementById('nome')
+let variavel_2 = document.getElementById('sobrenome')
+let variavel_3 = document.getElementById('telefone')
+let buttonAdd = document.getElementById('button-add')
+let main = document.getElementById('areaDaLista')
 
-function addTarefa () {
-    let valorList = list.value;
+function addNumero(){
+    let valorVariavelU = variavel_1.value;
+    let valorVariavelD = variavel_2.value;
+    let valorVariavelT = variavel_3.value;
 
-    if((valorList !== " ") && (valorList !== null) &&(valorList !== undefined)){
+    if ((valorVariavelU, valorVariavelD, valorVariavelT  !=="") && (valorVariavelU,valorVariavelD, valorVariavelT !==null) && (valorVariavelU,valorVariavelD, valorVariavelT !==undefined)){
 
-        ++contador;
+            ++contador;
 
-        let novoItem = 
-        `<div id="${contador}"class="itens">
-        <div>
-            <button id="select">Selecionar</button>
-        </div>
-        <div class="tarefa">
-            ${valorList}
-        </div>
-        <div>
-            <button id="deletar">Deletar</button>
-        </div>
-        </div>`
+            let novoContato = `<div id="${contador}" class="lista">
+            <div>
+            </div>
+            <div>
+            </div>
+            <div class="nome">
+                ${valorVariavelU}
+            </div>
+            <div class="sobrenome">
+                ${valorVariavelD}
+            </div>
+            <div class="telefone">
+                ${valorVariavelT}
+        </div>`;
+                main.innerHTML += novoContato;
 
-        $('form').on('submit', function(e){
-            e.preventDefault();
-        })
-        
-        main.innerHTML += novoItem;
+                variavel_1.value ="";
+                variavel_2.value ="";
+                variavel_3.value ="";
 
-        list.value = "";
-        list.focus();
-    }
-}
+                variavel_1.focus ();
+                variavel_2.focus ();
+                variavel_3.focus ();
 
-list.addEventListener("keyup",function(event){
-
-    if (event.keycode === 13) {
-        event.preventDefault();
-        btnAdd.click();
-    }
-})
-
-
+    }}
 
 
